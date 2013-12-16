@@ -1,3 +1,10 @@
+# ------ ----- ------- #
+# Date - 16 Dec 2013
+# Time - 9:55 PM
+# Author - NKMAN
+# It encrypts the text with 'CAESAR CIPHER' concept.
+# ------ ----- ------- #
+
 import sys
 st = raw_input('Enter the string : ')
 encrypted_text = ''
@@ -12,5 +19,7 @@ for m in st:
 			encrypted_text = encrypted_text + chr(num - 26)
 		else:
 			encrypted_text = encrypted_text + chr(num)
+	else:
+		encrypted_text = encrypted_text + m
 
 print encrypted_text.lower()
