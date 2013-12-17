@@ -22,4 +22,4 @@ for m in st:
 	else:
 		encrypted_text = encrypted_text + m
 
-print encrypted_text.lower()
+sys.stdout.write(encrypted_text.lower())

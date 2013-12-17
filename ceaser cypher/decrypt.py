@@ -24,4 +24,4 @@ for m in enr_txt:
 	else:
 		dec_txt = dec_txt + m
 
-print dec_txt.lower()
+sys.stdout.write(dec_txt.lower())
