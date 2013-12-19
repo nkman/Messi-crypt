@@ -5,13 +5,15 @@ def decrypt(key, message):
 	code = ['']*size
 	rows = size/key
 	gap = size - rows*key
-	j = 0
-	for i in range(0,key/2):
-		k = i
-		for j in range(i,i+key-gap):
+	k = 0
+	for i in range(0,key/2-gap):
+		for j in range(i,size):
 			code[j] = message[k]
 			k = k + 1
 			j = j + 8
-			
 
-# code[0] = message[0], code[8] = message[1], code[24] = message[2], code[]
+	for i in range(key/2-gap,key/2):
+		
+
+# code[0] = message[0], code[8] = message[1], code[16] = message[2], code[24] = message[3]
+# 
