@@ -1,3 +1,10 @@
+# ------ ----- ------- #
+# Date - 21 Dec 2013
+# Time - 8:54 PM
+# Author - NKMAN
+# It encrypts the text with 'Transposition CIPHER' concept.
+# ------ ----- ------- #
+
 import sys
 
 def enrcypt(key, message):

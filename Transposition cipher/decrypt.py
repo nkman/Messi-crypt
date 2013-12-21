@@ -1,3 +1,10 @@
+# ------ ----- ------- #
+# Date - 21 Dec 2013
+# Time - 8:55 PM
+# Author - NKMAN
+# It decrypts the text with 'Transposition CIPHER' concept.
+# ------ ----- ------- #
+
 import sys
 
 def decrypt(key, message):
