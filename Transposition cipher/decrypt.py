@@ -3,10 +3,6 @@ import sys
 def decrypt(key, message):
 	size = len(message)
 	code = ['']*size
-	rows = size/key
-	if(size%key != 0):
-		rows = rows + 1
-	gap = rows*key - size
 	k = 0
 	for i in range(0,key):
 		j = i
