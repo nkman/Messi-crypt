@@ -19,9 +19,9 @@ def remove(message):
 
 def DictionaryLoader():
 	f = open('../dictionary.txt','r')
-	words = {}
+	words = []
 	for t in f.read().split('\n'):
-		words[t] = None
+		words.append(t)
 	f.close()
 	return words
 
