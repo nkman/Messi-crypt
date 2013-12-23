@@ -1,3 +1,10 @@
+# ------ ----- ------- #
+# Date - 23 Dec 2013
+# Time - 7:21 PM
+# Author - NKMAN
+# It encripts the text with 'Multiplicative CIPHER' concept.
+# ------ ----- ------- #
+
 import sys
 alpha = 'ABCDEFGHIJKLMNNOPQRSTUVWXYZ'
 alpha = alpha + alpha.lower()
