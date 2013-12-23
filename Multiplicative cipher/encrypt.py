@@ -1,8 +1,12 @@
 import sys
 alpha = 'ABCDEFGHIJKLMNNOPQRSTUVWXYZ'
+alpha = alpha + alpha.lower()
 
 def Ascii(key,a):
-	return ((ord(a) - 65)*key % 26) + 65
+	if a.isupper():
+		return ((ord(a) - 65)*key % 26) + 65
+	else:
+		return ((ord(a) - 97)*key % 26) + 97
 
 def Encription(key,message):
 	ed = ''
@@ -15,11 +19,10 @@ def Encription(key,message):
 
 def main():
 	msg = raw_input('The text to be encrypted : ')
-	msg = msg.upper()
+	#msg = msg.upper()
 	key = raw_input('The key : ')
 	key = int(key)
 	sys.stdout.write(Encription(key,msg))
 
 if __name__ == '__main__':
 	main()
-

@@ -1,8 +1,12 @@
 import sys
 alpha = 'ABCDEFGHIJKLMNNOPQRSTUVWXYZ'
+alpha = alpha + alpha.lower()
 
 def Ascii(msg):
-	return ord(msg) - 65
+	if msg.isupper():
+		return ord(msg) - 65
+	else:
+		return ord(msg) - 97
 
 def Decrypter(key,message):
 	ed = ''
@@ -10,7 +14,10 @@ def Decrypter(key,message):
 		if m in alpha:
 			for i in range(0,26):
 				if ((i*key % 26) == Ascii(m)):
-					ed = ed + chr(i+65)
+					if m.isupper():
+						ed = ed + chr(i+65)
+					else:
+						ed = ed + chr(i+97)
 					break
 		else:
 			ed = ed + m
