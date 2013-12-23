@@ -12,7 +12,7 @@ def enrcypt(key, message):
 
 def main():
 	code = open('sample.txt','r').read()
-	key = 8
+	key = 10
 	f = open('encryptedSample.txt','w')
 	f.write(enrcypt(int(key),code))
 	sys.stdout.write(enrcypt(int(key),code))

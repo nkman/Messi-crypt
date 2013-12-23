@@ -14,8 +14,9 @@ def decrypt(key, message):
 	return ''.join(code)
 
 def main():
-	text = open('encryptedSample.txt','r').read()
-	key = 8
+	text = open('encryptedSample.txt','r').read().strip()
+	#print text
+	key = 10
 	sys.stdout.write(decrypt(int(key),text))
 
 if __name__ == '__main__':

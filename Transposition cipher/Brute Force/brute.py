@@ -28,10 +28,13 @@ def DictionaryLoader():
 def main():
 	msg = raw_input('Encrypted Text : ')
 	for i in range(0,len(msg)):
+		print 'Trying with key #%s' % i
 		word = decrypt(i,msg)
-		if(CountWords(word) > 0.2): #Assuming 20 percent of words
+		if(CountWords(word) > 0.2): #Assuming 20 percenteg of words
 			print word
 			sys.exit()
+	print 'Sorry Could not find the type of encryption'
+	sys.exit()
 
 def CountWords(message):
 	wordList = remove(message)
