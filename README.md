@@ -1,1 +1,1 @@
-Basic knowladge about Cryptography.
+Basic knowledge about Cryptography.
